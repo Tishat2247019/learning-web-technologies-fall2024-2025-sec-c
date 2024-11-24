@@ -37,7 +37,7 @@ if($_SESSION['status'] == true){
                         </td>
                     </tr>
                     <tr>
-                        <td colspan="2" align = "center"    >
+                        <td colspan="2" align = "end"    >
                             <a href="logout.php">logout</a>
                         </td>
                     </tr>
