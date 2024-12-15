@@ -1,6 +1,6 @@
 <?php
     session_start();
-    if(!isset($_COOKIE['status'])){
+    if(!isset($_SESSION['status'])){
         header('location: login.html'); 
     }
 
@@ -34,15 +34,15 @@
                 <td><?php echo $users['name']; ?></td>
                 <td><?php echo $users['type']; ?></td>
             </tr>
+            <?php } ?>
                 <tr>
                 <td colspan="3">
-                     |
                     <a href="admin.php"> Go Home </a> 
                 </td>
                 </tr>
                
 
-            <?php } ?>
+           
         </table>
 </body>
 </html>
