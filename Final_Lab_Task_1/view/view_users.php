@@ -38,10 +38,10 @@
                 <td><?php echo $row['email']; ?></td>
                 <td><?php echo $row['type']; ?></td>
                 <td>
-                    <a href="edit.php?id=<?=$users[$i]['id']?>"> EDIT </a> 
+                    <a href="edit.php?id=<?php echo $idd?>&idt=<?php echo $row['id']?>"> EDIT </a> 
                 </td>
                 <td>
-                <a href="../model/delete_user.php?id=<?php echo $idd?>;idt=<?php echo $row['id']?>"> DELETE </a> 
+                <a href="../model/delete_user.php?id=<?php echo $idd?>&idt=<?php echo $row['id']?>"> DELETE </a> 
                 </td>
                 <?php } ?>
             </tr>
