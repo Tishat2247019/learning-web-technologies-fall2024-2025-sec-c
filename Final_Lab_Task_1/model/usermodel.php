@@ -62,6 +62,33 @@ function show_users(){
     // }
 }
 
+
+function delete_user($idt){
+    $conn = getConnection();
+    $sql = "DELETE FROM users WHERE id='$idt'";
+    $result = mysqli_query($conn, $sql);
+    if($result){
+        return true;
+    }
+    else{
+        return false;
+    }
+}
+
+function edit_user($idt, $name, $email, $type){
+    $conn = getConnection();
+    $sql = "UPDATE users
+            SET name = '$name', email = '$email', type = '$type'
+            WHERE id = $idt";
+    $result = mysqli_query($conn, $sql);
+    if($result){
+        return true;
+    }
+    else{
+        return false;
+    }
+}
+
 // show_users();   
 
 ?>
